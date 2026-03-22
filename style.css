@@ -1,0 +1,126 @@
+/* Carousel media sizing */
+.carouselimg {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+/* Card base appearance */
+.card {
+  height: 100%;
+  background-color: #273030;
+  color: #ffffff;
+}
+
+/* Interactive hover behavior for clickable cards */
+.card:not(.no-hover-card) {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:not(.no-hover-card):hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Utility class for cards that should stay static */
+.no-hover-card {
+  cursor: default;
+  transition: none;
+}
+
+.no-hover-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Hidden preview text that expands on hover */
+.card-text {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.card:hover .card-text {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* Horizontal card layout used on index category rows */
+.index-cards .card {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.index-cards .card-img-top {
+  width: 42%;
+  min-width: 140px;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain !important;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+
+.index-cards .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* Stack image and body vertically on smaller screens */
+  .index-cards .card {
+    flex-direction: column;
+  }
+
+  .index-cards .card-img-top {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+body {
+  background-color: #273030;
+}
+
+/* Shared heading styling and reveal-on-hover hint */
+.section-heading {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.heading-hint {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #9E430B;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.section-heading:hover .heading-hint {
+  opacity: 1;
+}
+
+.heading-hint {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #9E430B;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.section-heading:hover .heading-hint {
+  opacity: 1;
+}

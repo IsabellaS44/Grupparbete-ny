@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  
+
+<!-- Main site header with branding, search, and navigation -->
 
 <header>
 
@@ -72,7 +73,6 @@
       </a>
     </div>
     <div class="carousel-item">
-      <!--TEMPORARY LINK-->
       <a href="artiklar.php" class="d-block" aria-label="Gå till artiklar">
         <img src="assets/css/bootstrap-5.3.8-dist/images/carouselart4.jpg" class="carouselimg" alt="Carousel article ad">
       </a>
@@ -90,6 +90,7 @@
 </main>
 
 <!-- KORTSEKTION -->
+<!-- Homepage content grouped by category and linked to detail pages -->
 <section class="container mt-5">
 
   <!-- ROW 1 -->
@@ -242,6 +243,7 @@
   
 </section>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS for carousel and interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
