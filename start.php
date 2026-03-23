@@ -11,7 +11,6 @@
 
 <body>
 
-<!-- Main site header with branding, search, and navigation -->
 
 <header>
 
@@ -90,7 +89,6 @@
 </main>
 
 <!-- KORTSEKTION -->
-<!-- Homepage content grouped by category and linked to detail pages -->
 <section class="container mt-5">
 
   <!-- ROW 1 -->

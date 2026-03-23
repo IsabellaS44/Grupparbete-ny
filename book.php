@@ -103,7 +103,6 @@ if (isset($_GET['query']) && trim($_GET['query']) !== '') {
 </header>
 
 <?php
-// Load the selected item and map it to a local image file.
 $conn = new mysqli("localhost", "root", "", "wisdom");
 
 // Mapping mellan id och bildnamn
@@ -144,7 +143,7 @@ $row = $result->fetch_assoc();
 
 <body style="background:#273030; color:white;">
 
-<!-- Detail view with image on the left and metadata on the right -->
+
 <div class="container mt-5">
 
     <div class="row g-4 align-items-start">
