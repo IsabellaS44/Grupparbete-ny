@@ -1,25 +1,71 @@
-/*stilsättning för hela sidan*/
+/* Bakgrunden*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #273030;
-    color: #fff;
+    background-color:#273030;
 }
-/*stilsättning för kortet som innehåller bokinformationen och recensionen*/
-.card {
-    background-color: #273030;
-    border: 2px solid #9e430b;
-    border-radius: 10px;
-    color: #fff;
-}
-/*stilsättning för Recension*/
-.Recension {
-    max-width: 70%;
-    margin: 0 auto;
-}
-main {
-    padding: 20px;
-}
-/*stilsättning för knapparna*/
-.btn {
+
+/* Topplistan rutor + hover effects*/
+.feature-card {
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
+    background-color:white;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba (0, 0, 0, 0.1);
+    background-color: rgb(235, 233, 233);
+}
+
+.shadow:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba (0, 0, 0, 0.1);
+    background-color: #9E430B;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: black;
+}
+
+/* Valda rutan*/
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color:white;
+}
+
+
+/* Recensionsrutorna*/
+.card-b {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color:white;
+}
+
+/* Footer + social icons*/
+.footer-brown {
+    background-color:#9E430B;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 36;
+    background-color:white;
+    color:#9E430B;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.social-icon:hover {
+    background-color: white;
+    opacity: 0.5;
+    color:#9E430B;
 }
