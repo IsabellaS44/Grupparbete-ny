@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="sv">
 <?php
-include 'includes/header.php';
-include 'includes/footer.php';
+// Include header
+include 'assets/css/includes/header.php';
+// Include footer
+include 'assets/css/includes/footer.php';
+// Include display errors
+include 'assets/css/includes/display_errors.php';
 ?>
 
 <head>
