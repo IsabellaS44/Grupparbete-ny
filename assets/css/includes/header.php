@@ -1,3 +1,13 @@
+<?php
+// Session management
+session_start();
+// Show errors for debugging
+include 'assets/css/includes/display_errors.php';
+// Include database connection
+include 'assets/css/config/db.php';
+// Process login data to database
+require_once 'functions/session.login.php';
+?>
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -13,7 +23,7 @@
 </head>
 
 <body>
-    <!-- Navigationsmeny -->
+    <!-- Navmenu -->
     <header>
         <nav class="navbar navbar-expand-md p-3 px-5">
             <div class="container">
@@ -41,6 +51,18 @@
                     <input type="search" class="form-control me-2 rounded-pill w-75" placeholder="Sök" aria-label="Sök...">
                     <button type="submit" class="btn btn-dark">Sök</button>
                 </form>
+                <?php
+                // Check if user is logged in
+                if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
+                    // Shows logout button if user is logged in
+                    echo '
+                    <a href="logout.php" class="btn btn-dark ms-2">
+                    <i class="fa-solid fa-right-from-bracket"></i>Logga ut
+                    </a>
+                    ';
+                } else {
+                    // Shows login button if user is not logged in
+                    echo '
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <button class="btn btn-dark ms-2 dropdown-toggle" data-bs-toggle="dropdown">
@@ -60,10 +82,13 @@
                             </form>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Glömt lösenord?</a>
-                            <a class="dropdown-item" href="#">Skapa konto</a>
+                            <a class="dropdown-item" href="register.php">Skapa konto</a>
                         </div>
                     </li>
                 </ul>
+                ';
+                }
+                ?>
             </div>
         </nav>
     </header>
