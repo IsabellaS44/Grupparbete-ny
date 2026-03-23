@@ -1,0 +1,25 @@
+/*stilsättning för hela sidan*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #273030;
+    color: #fff;
+}
+/*stilsättning för kortet som innehåller bokinformationen och recensionen*/
+.card {
+    background-color: #273030;
+    border: 2px solid #9e430b;
+    border-radius: 10px;
+    color: #fff;
+}
+/*stilsättning för Recension*/
+.Recension {
+    max-width: 70%;
+    margin: 0 auto;
+}
+main {
+    padding: 20px;
+}
+/*stilsättning för knapparna*/
+.btn {
+    border-radius: 8px;
+}
