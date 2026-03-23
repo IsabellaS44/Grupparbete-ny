@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Wisdoom</title>
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <header>
+    </header>
+<main>
+
+<!-- Hero section -->
+        <section class="hero text-center mt-3">
+                <h1>
+                    <p class="text-white">Populära böcker - </p>
+                </h1>
+                <h3><p class="text-white">Topplistan just nu!</p></h3>
+        </section>
+
+    <!-- Topp 2 rutorna -->
+        <section class="py-2">
+            <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="feature-card p-2">
+                        <div class="text-warning mt-3">
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        </div>
+
+                        <img src="assets/images/bok2.png" alt="bild på bok n.1" height="430">
+                        <p>En resa genom vetenskapens historia, från tidiga upptäckter till dagens avancerade forskning. Boken visar hur idéer, experiment och teknologiska framsteg har förändrat vår förståelse av universum.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="feature-card p-2">
+                        <div class="text-warning mt-3">
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        <i class="fa-solid fa-star fa-xl"></i>
+                        </div>
+                        
+                        <img src="assets/images/bok1.png" alt="bild på bok n.2" height="430">
+                        <p>En översikt över mänsklighetens historia från antiken till dagens moderna samhälle. Boken utforskar stora imperier, kulturella förändringar och historiska händelser som format världen vi lever i idag</p>
+                    </div>
+                </div>
+        
+    <!-- Topp 3-10 rutorna -->
+                <div class="col-md-3">
+                    <div class="feature-card p-2">
+            <div class="myDIV">
+                <h4>3:</h4>
+                <img src="assets/images/bok3.png" alt="bild på bok n.3" width="200">
+            </div>
+            <div class="hide">En bok om de viktigaste upptäckterna och hur de har påverkat samhället.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card p-3">
+            <div class="myDIV">
+                        <h4>4:</h4>
+                        <img src="assets/images/bok4.png" alt="bild på bok n.4" width="200">
+            </div>
+            <div class="hide">En fascinerande genomgång av människans evolution. Boken beskriver hur våra tidiga förfäder utvecklades över miljontals år och hur biologiska och kulturella förändringar formade den moderna människan.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card p-3">
+            <div class="myDIV">
+                        <h4>5:</h4>
+                        <img src="assets/images/bok5.png" alt="bild på bok n.5" width="200" >
+            </div>
+            <div class="hide">En bok om naturens fascinerande fenomen och de komplexa ekosystem som formar livet på jorden.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card p-3">
+            <div class="myDIV">
+                        <h4>6:</h4>
+                        <img src="assets/images/bok6.png" alt="bild på bok n.6" width="200">
+            </div>
+            <div class="hide">En inblick i livet under medeltida Europa. Boken beskriver kungadömen, samhällsstrukturer, religion och kultur under en period som lade grunden för det moderna Europa.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card p-3 mb-5">
+            <div class="myDIV">
+                        <h4>7:</h4>
+                        <img src="assets/images/bok7.png" alt="bild på bok n.7" width="200">
+            </div>
+            <div class="hide">En introduktion till arkeologiska fynd som avslöjar historien om mänskliga civilisationer.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card p-3 mb-5">
+            <div class="myDIV">
+                        <h4>8:</h4>
+                        <img src="assets/images/bok8.png" alt="bild på bok n.8" width="200">
+            </div>
+            <div class="hide">Vad är intelligens och hur fungerar hjärnan? Den här boken utforskar hjärnans utveckling, kognition och forskning om mänskligt tänkande och lärande.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card p-3 mb-5">
+            <div class="myDIV">
+                        <h4>9:</h4>
+                        <img src="assets/images/bok9.png" alt="bild på bok n.9" width="200">
+            </div>
+            <div class="hide">En introduktion till renässansen, en tid av konstnärlig och vetenskaplig blomstring i Europa. Boken lyfter fram idéer, konstnärer och upptäckter som förändrade synen på människan och världen.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card p-3 mb-5">
+            <div class="myDIV">
+                        <h4>10:</h4>
+                        <img src="assets/images/bok10.png" alt="bild på bok n.10" width="200">
+            </div>
+            <div class="hide">En historisk genomgång av idéer och upptäckter som förändrat vår förståelse av världen.</div>
+                    </div>
+                </div>
+        </section>
+
+<!--Valda boken-->
+    <div class="d-flex justify-content-center mt-5">
+        <div class="card py-2" style="width: 40rem;">
+            <div class="card-body text-center">
+
+        <img src="assets/images/bok2.png" alt="bild på bok n.1" height="430">
+            <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+        </div>
+
+            <h2>Vetenskapens utveckling</h2>
+            <p class="fw-bold mb-3">by; Brian Nelson</p>
+
+    <!-- Lyssna/ läs-knapparna -->
+        <section class="container mt-3 mb-4 text-center">
+                <button type="button" class="btn btn-outline-secondary">
+                    <p class="text-danger-emphasis mb-1"><u>Läs bok</u><i class="fa-brands fa-leanpub fa-xl"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                    <p class="text-danger-emphasis mb-1"><u>Lyssna på bok</u><i class="fa-solid fa-volume-high fa-xl"></i>
+                </button>
+        </section>
+
+                <p class="text-left">En resa genom vetenskapens historia, från tidiga upptäckter till dagens avancerade forskning. Boken visar hur idéer, experiment och teknologiska framsteg har förändrat vår förståelse av universum.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- Testimonial section-->
+    <section class="container mt-4">
+            <h2>
+                <p class="text-white text-left text-sucess mt-5">Recensioner</p>
+            </h2>
+    <section>
+        <div class="d-flex flex-row">
+            <div class="p-2"><p class="shadow text-white"><i class="fa-solid fa-plus"></i><u>Skapa recension</u></div></p>
+        </div>
+    </section>
+
+    <!-- Recension -->
+            <div class="row g-4">
+                    <div class="card-b mb-3">
+                        <i class="fa-solid fa-circle-user fa-xl"></i><p class="fw-bold mb-0">Hanna Sjöberg</p>
+                            <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Fastnade direkt! Väldigt snyggt berättad och inspirerande hela vägen.</p>
+
+                    <p class="text-muted mb-1">14 mars 2026</p>
+                    <p class="text-danger-emphasis mb-1"><u>Redigera</u><i class="fa-regular fa-pen-to-square"></i>
+                        <u>Radera</u><i class="fa-regular fa-trash-can"></i>
+                    </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Likea & Kommentera -->
+    <section>
+        <div class="container">
+        <div class="row g-4 mb-3">
+        <div class="d-flex flex-row-reverse">
+            <div class="p-2"><p class="shadow text-white">Kommentera <i class="fa-solid fa-comments"></i></div></p>
+            <div class="p-2"><p class="shadow text-white">Likea<i class="fa-solid fa-thumbs-up"></i></div></p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Recension -->
+    <section>
+        <div class="container">
+            <div class="row g-4">
+                    <div class="card-b mb-3">
+                        <i class="fa-solid fa-circle-user fa-xl"></i><p class="fw-bold mb-0">Elin Nyström</p>
+                            <div class="text-warning mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>Intressant innehåll, men hade gärna sett mer djup i vissa kapitel.</p>
+                
+                    <p class="text-muted mb-1">22 feb 2026</p>
+                    <p class="text-danger-emphasis mb-1"><u>Redigera</u><i class="fa-regular fa-pen-to-square"></i>
+                        <u>Radera</u><i class="fa-regular fa-trash-can"></i>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Likea & Kommentera -->
+    <section>
+        <div class="container">
+        <div class="row g-4 mb-3">
+        <div class="d-flex flex-row-reverse">
+            <div class="p-2"><p class="shadow text-white">Kommentera <i class="fa-solid fa-comments"></i></div></p>
+            <div class="p-2"><p class="shadow text-white">Likea<i class="fa-solid fa-thumbs-up"></i></div></p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Recension -->
+    <section>
+            <div class="container">
+            <div class="row g-4">
+                    <div class="card-b mb-3">
+                    <i class="fa-solid fa-circle-user fa-xl"></i><p class="fw-bold mb-0">Daniel Forsberg</p>
+
+                    <div class="text-warning mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                        <p>Bra bok om man vill få en överblick. Lätt att läsa utan att bli tråkig.</p>
+
+                <p class="text-muted mb-1">9 mars 2026</p>
+                    <p class="text-danger-emphasis mb-1"><u>Redigera</u><i class="fa-regular fa-pen-to-square"></i>
+                    <u>Radera</u><i class="fa-regular fa-trash-can"></i>
+                    </p>
+
+    </section>
+
+    <!-- Likea & Kommentera -->
+    <section>
+            <div class="container">
+                <div class="d-flex flex-row-reverse">
+                    <div class="p-2"><p class="shadow text-white">Kommentera<i class="fa-solid fa-comments"></i></div></p>
+                    <div class="p-2"><p class="shadow text-white">Likea<i class="fa-solid fa-thumbs-up"></i></div></p>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+    <footer class="footer-brown text-white py-3">
+            <div class="container d-flex jusitfy-content-between align-items-center">
+            <p class="mb-0">&copy; 2026 Wisdoom.</p>
+            <div>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-square-linkedin"></i></a>
+            </div>
+            </div>
+    </footer>
+
+    </body>
+
+</html>
