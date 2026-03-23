@@ -1,5 +1,5 @@
 <?php
-// Checks whether the registration button has been pressed
+// Checks whether the review submission button has been pressed
 if (isset($_POST['dela'])) {
 // Creates a query
 $sql = '
