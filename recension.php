@@ -26,7 +26,7 @@ require_once 'assets/functions/insert.php';
       <div class="card mb-4">
         <div class="row g-0">
           <div class="col-md-1">
-            <img src="assets/images/bok1.png" class="img-fluid rounded-start" alt="Världens historia från antiken till idag">
+            <img src="assets/images/books/bok1.png" class="img-fluid rounded-start" alt="Världens historia från antiken till idag">
           </div>
           <div class="col-md-11">
             <div class="card-body">
