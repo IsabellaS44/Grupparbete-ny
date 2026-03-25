@@ -1,11 +1,6 @@
 <?php
 //start session to be able to use session variables for user id when inserting review to database
 session_start();
-//Checks if user is logged in, if not shows error message and redirects user to index.php
-if (!isset($_SESSION['user_id'])) {
-  header('Location: ../../index.php');
-  exit();
-}
 //Show errors for debugging
 require_once 'assets/includes/display_errors.php';
 //Include database connection
@@ -13,13 +8,23 @@ require_once 'assets/config/db.php';
 //Register information to database
 require_once 'assets/functions/insert.php';
 //Include header
-require_once 'assets/includes/header.php';
+
 ?>
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wisdoom</title>
+  <!-- Unified CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="header-page">
+  <?php include 'assets/includes/header.php'; ?>
   <main>
     <?php
-    // Show success message if review is successfully submitted
     if (isset($_GET['action'])) {
-      //Checks witch action is set
       switch ($_GET['action']) {
         case 'success':
           echo '
@@ -27,17 +32,12 @@ require_once 'assets/includes/header.php';
                     Din recension har skickats in!
                  </div>';
           break;
-      }
-      }
-     else {
-      // Show error message if review submission fails
-      if (isset($_GET['action'])) { 
-        switch ($_GET['action']) {
-      case 'error':
-        echo '
-               <div class="alert alert-danger" role="alert">
-                  Det gick inte att skicka in din recension, försök igen!
-               </div>';
+        case 'error':
+          echo '
+                 <div class="alert alert-danger" role="alert">
+                    Det gick inte att skicka in din recension, försök igen!
+                 </div>';
+          break;
       }
     }
     ?>
@@ -60,7 +60,7 @@ require_once 'assets/includes/header.php';
     <!-- Review form -->
     <section class="Recension container py-5 mb-5">
       <form action="recension.php" method="post">
-        <div class="card p-4">
+        <div class="review-card p-4">
           <h2 class="mb-4">Recension</h2>
           <div class="d-flex align-items-center gap-3 mb-4">
             <!-- Stars for rating(non functional) -->
@@ -71,7 +71,7 @@ require_once 'assets/includes/header.php';
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-              <p class="mb-0">Välj din rating</p>
+            <p class="mb-0">Välj din rating</p>
           </div>
           <div class="mb-4">
             <input type="text" class="form-control" id="review_title" placeholder="Titel på recension" name="review_title" required>

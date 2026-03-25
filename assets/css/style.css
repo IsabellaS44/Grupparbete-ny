@@ -1,6 +1,5 @@
 @import url("bootstrap-5.3.8-dist/css/bootstrap.min.css");
 @import url("all.min.css");
-
 /* Karusell */
 .carouselimg {
     width: 100%;
@@ -625,4 +624,24 @@ body {
 .index-page .btn,
 .header-page .btn {
     background-color: #273030;
+}
+/*review page*/
+/*stilsättning för kortet som innehåller nformationen och recensionen*/
+.review-card {
+    background-color: #273030;
+    border: 2px solid #9e430b;
+    border-radius: 10px;
+    color: #fff;
+}
+/*stilsättning för Recension*/
+.Recension {
+    max-width: 70%;
+    margin: 0 auto;
+}
+main {
+    padding: 20px;
+}
+/*stilsättning för knapparna*/
+.btn {
+    border-radius: 8px;
 }

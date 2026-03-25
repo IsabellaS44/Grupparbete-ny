@@ -182,9 +182,8 @@
             <section>
                 <div class="d-flex flex-row">
                     <div class="p-2">
-                        <p class="shadow text-white"><i class="fa-solid fa-plus"></i><u>Skapa recension</u>
+                        <a href="recension.php?source=books" class="shadow text-white"><i class="fa-solid fa-plus"></i><u>Skapa recension</u></a>
                     </div>
-                    </p>
                 </div>
             </section>
 
