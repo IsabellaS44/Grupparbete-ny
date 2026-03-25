@@ -10,6 +10,11 @@ require_once 'functions/insert.php';
 <!DOCTYPE html>
 <html lang="sv">
 
+
+<!DOCTYPE html>
+<html lang="sv">
+
+
 <head>
     <meta charset="utf-8">
     <title>Skapa konto</title>
@@ -20,6 +25,7 @@ require_once 'functions/insert.php';
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/album.css">
 </head>
+
 
 <body>
     <main class="container py-5">
@@ -45,20 +51,24 @@ require_once 'functions/insert.php';
                                 <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Förnamn">
                             </div>
 
+
                             <div class="mb-2">
                                 <label for="lastname" class="form-label mb-1 fw-bold">Efternamn</label>
                                 <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Efternamn">
                             </div>
+
 
                             <div class="mb-2">
                                 <label for="email" class="form-label mb-1 fw-bold">E-post</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="E-post">
                             </div>
 
+
                             <div class="mb-3">
                                 <label for="password" class="form-label mb-1 fw-bold">Lösenord</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Lösenord (minst 8 tecken)">
                             </div>
+
 
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="index.php" class="btn btn-danger">Tillbaka</a>
@@ -75,5 +85,7 @@ require_once 'functions/insert.php';
     include 'assets/css/includes/footer.php';
     ?>
 </body>
+
+</html>
 
 </html>

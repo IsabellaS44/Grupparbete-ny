@@ -1,21 +1,41 @@
 <?php
+//start session to be able to use session variables for user id when inserting review to database
+session_start();
 //Show errors for debugging
 require_once 'assets/includes/display_errors.php';
 //Include database connection
 require_once 'assets/config/db.php';
 //Register information to database
 require_once 'assets/functions/insert.php';
+//Include header
+
 ?>
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wisdoom</title>
+  <!-- Unified CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="header-page">
+  <?php include 'assets/includes/header.php'; ?>
   <main>
     <?php
-    // Show success message if review is successfully submitted
     if (isset($_GET['action'])) {
-      //Checks witch action is set
       switch ($_GET['action']) {
         case 'success':
           echo '
                  <div class="alert alert-success" role="alert">
                     Din recension har skickats in!
+                 </div>';
+          break;
+        case 'error':
+          echo '
+                 <div class="alert alert-danger" role="alert">
+                    Det gick inte att skicka in din recension, försök igen!
                  </div>';
           break;
       }
@@ -40,7 +60,7 @@ require_once 'assets/functions/insert.php';
     <!-- Review form -->
     <section class="Recension container py-5 mb-5">
       <form action="recension.php" method="post">
-        <div class="card p-4">
+        <div class="review-card p-4">
           <h2 class="mb-4">Recension</h2>
           <div class="d-flex align-items-center gap-3 mb-4">
             <!-- Stars for rating(non functional) -->
@@ -51,7 +71,7 @@ require_once 'assets/functions/insert.php';
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-              <p class="mb-0">Välj din rating</p>
+            <p class="mb-0">Välj din rating</p>
           </div>
           <div class="mb-4">
             <input type="text" class="form-control" id="review_title" placeholder="Titel på recension" name="review_title" required>

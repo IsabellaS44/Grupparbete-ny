@@ -12,23 +12,25 @@
     <?php include 'assets/includes/header.php'; ?>
     <main>
 
-        <!-- Hero section -->
-        <section class="hero text-center mt-3">
-            <h1>
-                <p class="text-white">Populära artiklar - </p>
+        <!-- Hero sektion -->
+        <section class="hero text-center articles-hero">
+            <h1 class="articles-hero-title">
+                <p class="text-white">Populära artiklar</p>
             </h1>
-            <h3>
+            <h3 class="articles-hero-subtitle">
                 <p class="text-white">Topplistan just nu!</p>
             </h3>
         </section>
 
+        <div class="section-divider" aria-hidden="true"></div>
+
         <!-- Topp 2 rutorna -->
-        <section class="py-2">
-            <div class="container text-center">
-                <div class="row g-4">
+        <section class="articles-top-section">
+            <div class="container-lg">
+                <div class="row g-5">
                     <div class="col-md-6">
-                        <div class="feature-card p-2">
-                            <div class="text-warning mt-3">
+                        <div class="feature-card feature-card-large">
+                            <div class="text-warning articles-stars">
                                 <i class="fa-solid fa-star fa-xl"></i>
                                 <i class="fa-solid fa-star fa-xl"></i>
                                 <i class="fa-solid fa-star fa-xl"></i>
@@ -36,14 +38,14 @@
                                 <i class="fa-solid fa-star fa-xl"></i>
                             </div>
 
-                            <img src="assets/images/articles/art1.png" alt="bild på artikel n.1" height="430">
-                            <p>En genomgång av nya upptäckter inom molekylärbiologi och hur genetiska strukturer påverkar cellers funktion och utveckling.</p>
+                            <img src="assets/images/articles/art1.png" alt="bild på artikel n.1" class="article-img-large">
+                            <p class="articles-card-text">En genomgång av nya upptäckter inom molekylärbiologi och hur genetiska strukturer påverkar cellers funktion och utveckling.</p>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <div class="feature-card p-2">
-                            <div class="text-warning mt-3">
+                        <div class="feature-card feature-card-large">
+                            <div class="text-warning articles-stars">
                                 <i class="fa-solid fa-star fa-xl"></i>
                                 <i class="fa-solid fa-star fa-xl"></i>
                                 <i class="fa-solid fa-star fa-xl"></i>
@@ -51,87 +53,88 @@
                                 <i class="fa-solid fa-star fa-xl"></i>
                             </div>
 
-                            <img src="assets/images/articles/art2.png" alt="bild på artikel n.2" height="430">
-                            <p>Artikeln undersöker mikroorganismer och deras betydelse för sjukdomar, ekosystem och medicinsk forskning.</p>
+                            <img src="assets/images/articles/art2.png" alt="bild på artikel n.2" class="article-img-large">
+                            <p class="articles-card-text">Artikeln undersöker mikroorganismer och deras betydelse för sjukdomar, ekosystem och medicinsk forskning.</p>
                         </div>
                     </div>
 
                     <!-- Topp 3-6 rutorna -->
                     <div class="col-md-3">
-                        <div class="feature-card p-3">
-                            <div class="myDIV">
+                        <div class="feature-card feature-card-small">
+                            <div class="myDIV articles-small-header">
                                 <h4>3:</h4>
-                                <img src="assets/images/articles/art3.png" alt="bild på artikel n.3" width="200">
+                                <img src="assets/images/articles/art3.png" alt="bild på artikel n.3" class="article-img-small">
                             </div>
-                            <div class="hide">En analys av hur artificiell intelligens och dataanalys används inom forskning och teknisk utveckling.</div>
+                            <div class="hide articles-hide-text">En analys av hur artificiell intelligens och dataanalys används inom forskning och teknisk utveckling.</div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                        <div class="feature-card p-3">
-                            <div class="myDIV">
+                        <div class="feature-card feature-card-small">
+                            <div class="myDIV articles-small-header">
                                 <h4>4:</h4>
-                                <img src="assets/images/articles/art4.png" alt="bild på artikel n.4" width="200">
+                                <img src="assets/images/articles/art4.png" alt="bild på artikel n.4" class="article-img-small">
                             </div>
-                            <div class="hide">En studie av globala klimatförändringar och de vetenskapliga insatser som görs för en mer hållbar framtid.</div>
+                            <div class="hide articles-hide-text">En studie av globala klimatförändringar och de vetenskapliga insatser som görs för en mer hållbar framtid.</div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                        <div class="feature-card p-3">
-                            <div class="myDIV">
+                        <div class="feature-card feature-card-small">
+                            <div class="myDIV articles-small-header">
                                 <h4>5:</h4>
-                                <img src="assets/images/articles/art5.png" alt="bild på artikel n.5" width="200">
+                                <img src="assets/images/articles/art5.png" alt="bild på artikel n.5" class="article-img-small">
                             </div>
-                            <div class="hide">En översikt av nya tekniska innovationer och hur fysikens principer används i modern ingenjörskonst.</div>
+                            <div class="hide articles-hide-text">En översikt av nya tekniska innovationer och hur fysikens principer används i modern ingenjörskonst.</div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                        <div class="feature-card p-3">
-                            <div class="myDIV">
+                        <div class="feature-card feature-card-small">
+                            <div class="myDIV articles-small-header">
                                 <h4>6:</h4>
-                                <img src="assets/images/articles/art6.png" alt="bild på artikel n.6" width="200">
+                                <img src="assets/images/articles/art6.png" alt="bild på artikel n.6" class="article-img-small">
                             </div>
-                            <div class="hide">En genomgång av avancerade material och deras roll inom nanoteknik och framtidens teknologi.</div>
+                            <div class="hide articles-hide-text">En genomgång av avancerade material och deras roll inom nanoteknik och framtidens teknologi.</div>
                         </div>
                     </div>
-        </section>
-
-        <!--Valda artikeln-->
-        <div class="d-flex justify-content-center mt-5">
-            <div class="card py-2" style="width: 40rem;">
-                <div class="card-body text-center">
-
-                    <section class="container mt-2 text-center">
-                        <img src="assets/images/articles/art1.png" alt="bild på artikel n.1" height="430">
-                        <div class="text-warning">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <h2>Molecular Biology</h2>
-                        <p class="fw-bold mb-3">by; Jacob Lawrence</p>
-                    </section>
-
-                    <!-- Lyssna/ läs-knapparna -->
-                    <section class="container mt-3 mb-4 text-center">
-                        <button type="button" class="btn btn-outline-secondary">
-                            <p class="text-danger-emphasis mb-1"><u>Läs bok</u><i class="fa-brands fa-leanpub fa-xl"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-secondary">
-                            <p class="text-danger-emphasis mb-1"><u>Lyssna på bok</u><i class="fa-solid fa-volume-high fa-xl"></i>
-                        </button>
-                    </section>
-
-                    <p class="text-left">En genomgång av nya upptäckter inom molekylärbiologi och hur genetiska strukturer påverkar cellers funktion och utveckling.</p>
                 </div>
             </div>
-        </div>
-        </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <!--Valda artikeln-->
+        <section class="articles-featured-section">
+            <div class="container-lg">
+                <div class="articles-featured-card">
+                    <img src="assets/images/articles/art1.png" alt="bild på artikel n.1" class="articles-featured-img">
+                    <div class="articles-featured-content">
+                        <div class="text-warning articles-featured-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="articles-featured-title">Molecular Biology</h2>
+                        <p class="articles-featured-author">by; Jacob Lawrence</p>
+
+                        <!-- Lyssna/ läs-knapparna -->
+                        <div class="articles-featured-buttons">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <p class="text-danger-emphasis mb-0"><u>Läs bok</u><i class="fa-brands fa-leanpub fa-xl ms-2"></i></p>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                                <p class="text-danger-emphasis mb-0"><u>Lyssna på bok</u><i class="fa-solid fa-volume-high fa-xl ms-2"></i></p>
+                            </button>
+                        </div>
+
+                        <p class="articles-featured-description">En genomgång av nya upptäckter inom molekylärbiologi och hur genetiska strukturer påverkar cellers funktion och utveckling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Testimonial section-->
         <section class="container mt-4">
@@ -141,9 +144,8 @@
             <section>
                 <div class="d-flex flex-row">
                     <div class="p-2">
-                        <p class="shadow text-white"><i class="fa-solid fa-plus"></i><u>Skapa recension</u>
+                        <a href="recension.php?source=articles" class="shadow text-white"><i class="fa-solid fa-plus"></i><u>Skapa recension</u></a>
                     </div>
-                    </p>
                 </div>
             </section>
 
@@ -275,17 +277,7 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="footer-brown text-white py-3">
-        <div class="container d-flex jusitfy-content-between align-items-center">
-            <p class="mb-0">&copy; 2026 Wisdoom.</p>
-            <div>
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-square-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
+    <?php include 'assets/includes/footer.php'; ?>
 
 </body>
 
