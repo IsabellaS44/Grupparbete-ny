@@ -1,10 +1,19 @@
 <?php
+//start session to be able to use session variables for user id when inserting review to database
+session_start();
+//Checks if user is logged in, if not shows error message and redirects user to index.php
+if (!isset($_SESSION['user_id'])) {
+  header('Location: ../../index.php');
+  exit();
+}
 //Show errors for debugging
 require_once 'assets/includes/display_errors.php';
 //Include database connection
 require_once 'assets/config/db.php';
 //Register information to database
 require_once 'assets/functions/insert.php';
+//Include header
+require_once 'assets/includes/header.php';
 ?>
   <main>
     <?php
@@ -18,6 +27,17 @@ require_once 'assets/functions/insert.php';
                     Din recension har skickats in!
                  </div>';
           break;
+      }
+      }
+     else {
+      // Show error message if review submission fails
+      if (isset($_GET['action'])) { 
+        switch ($_GET['action']) {
+      case 'error':
+        echo '
+               <div class="alert alert-danger" role="alert">
+                  Det gick inte att skicka in din recension, försök igen!
+               </div>';
       }
     }
     ?>
