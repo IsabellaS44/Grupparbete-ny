@@ -1,7 +1,7 @@
 <?php
 // Defines information
 define('DB_HOST', 'mysql');
-define('DB_NAME', 'Wisdoom');
+define('DB_NAME', 'wisdoom');
 define('DB_USER', 'root');
 define('DB_PASS', 'root');
 
