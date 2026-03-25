@@ -52,8 +52,7 @@ require_once 'functions/session.login.php';
                 if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
                     // Shows logout button if user is logged in
                     echo '
-                    <a href="logout.php" class="btn btn-dark ms-2">
-                    <i class="fa-solid fa-right-from-bracket"></i>Logga ut
+                    <a href="functions/session.logout.php" class="btn btn-danger ms-2"> Logga ut
                     </a>
                     ';
                 } else {

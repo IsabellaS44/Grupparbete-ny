@@ -7,6 +7,9 @@ require_once 'assets/css/config/db.php';
 require_once 'functions/insert.php';
 ?>
 
+<!DOCTYPE html>
+<html lang="sv">
+
 
 <!DOCTYPE html>
 <html lang="sv">
@@ -83,5 +86,6 @@ require_once 'functions/insert.php';
     ?>
 </body>
 
+</html>
 
 </html>

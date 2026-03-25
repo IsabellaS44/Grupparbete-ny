@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+<?php
+// Include header
+include 'assets/css/includes/header.php';
+// Include footer
+include 'assets/css/includes/footer.php';
+// Include display errors
+include 'assets/css/includes/display_errors.php';
+?>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wisdoom</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <!-- Fontawesome CSS -->
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Wisdoom</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/album.css">
 </head>
 
+<body>
+</body>
 <body class="index-page">
    <?php include 'assets/includes/header.php'; ?>
     <main>
