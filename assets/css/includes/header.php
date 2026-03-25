@@ -14,37 +14,33 @@ require_once 'functions/session.login.php';
 <head>
     <meta charset="utf-8">
     <title>Wisdoom</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/album.css">
+    <!-- Unified CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="header-page">
     <!-- Navmenu -->
     <header>
         <nav class="navbar navbar-expand-md p-3 px-5">
             <div class="container">
                 <a href="index.php" class="navbar-brand">
-                    <img src="images/Wisdoom.png" alt="Wisdoom Logo" width="170">
+                    <img src="assets/images/branding/Wisdoom.png" alt="Wisdoom Logo" width="170">
                 </a>
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a href="#" class="nav-link active fw-bold">Startsida</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Artiklar</a>
+                        <a class="nav-link" href="articles.php">Artiklar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dokumentärer</a>
+                        <a class="nav-link" href="docs.php">Dokumentärer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Böcker</a>
+                        <a class="nav-link" href="books.php">Böcker</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Om oss</a>
+                        <a class="nav-link" href="about.php">Om oss</a>
                     </li>
                 </ul>
                 <form class="d-flex ms-3">
